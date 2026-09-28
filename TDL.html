@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TASKLY</title>
+    <link rel="stylesheet" href="TDL.css">
+
+    <link rel="icon" type="image/png" href="TDL-LOGO.png">
+    <link rel="icon" href="TDL-LOGO.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">TASKLY</div>
+
+        <button id="themeButton" onclick="toggleTheme()">🌙</button>
+    </header>
+
+    <main>
+        <div class="todo-container">
+
+            <h1>My To Do List</h1>
+
+            <div class="task-input">
+                <input type="text" id="taskInput" placeholder="Enter a task...">
+                <button onclick="addTask()">Add</button>
+            </div>
+
+            <div class="task-controls">
+                <button class="delete-all-button" onclick="deleteAllTasks()">
+                    🗑️
+                </button>
+            </div>
+
+            <ul id="taskList"></ul>
+
+        </div>
+    </main>
+
+    <footer>
+        © 2026 TASKLY. All rights reserved.
+    </footer>
+
+    <script src="TDL.js"></script>
+</body>
+</html>
